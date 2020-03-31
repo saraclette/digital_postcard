@@ -1,0 +1,31 @@
+import config
+
+# Gui
+SCREEN_SIZE = (config.SCREEN["WIDTH"], config.SCREEN["HEIGHT"])
+SHOW_NEW_ITEM_EVENT = "<<ShowNewItem>>"
+
+# Image_and_text
+IMAGE_TYPE   = "IMAGE"
+TEXT_TYPE    = "TEXT"
+UNKNOWN_TYPE = "UNKNOWN"
+
+IMAGE_EXTENSION_LIST = [".jpg", ".png", ".jpeg", ".img", ".JPG", ".PNG", ".JPEG", ".IMG"]
+TEXT_EXTENSION_LIST  = [".txt", ".rtf", ".TXT", ".RTF"]
+
+INCREMENT = "INCREMENT"
+DECREMENT = "DECREMENT"
+NEW       = "NEW"
+
+# Effect
+START_COMMAND = "START_COMMAND"
+STOP_COMMAND  = "STOP_COMMAND"
+
+LED_EFFECT_TARGET   = "LED_EFFECT_TARGET"
+MOTOR_EFFECT_TARGET = "MOTOR_EFFECT_TARGET"
+ALL_EFFECT_TARGET   = "ALL_EFFECT_TARGET"
+
+# Threads delays
+NEW_ITEM_MONITOR_DELAY = 0.200 # seconds
+LED_UPDATE_DELAY       = 0.200 # seconds
+MOTOR_UPDATE_DELAY     = 0.200 # seconds
+SCREEN_UPDATE_DELAY    = 0.200 # seconds
