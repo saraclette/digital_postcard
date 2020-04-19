@@ -55,6 +55,8 @@ if __name__ == "__main__":
   printer.Fake_printer.start()
 
   root = tk.Tk()
+  root.attributes('-fullscreen',True)
+
   canvas = Gui(root, width=config.SCREEN["WIDTH"], height=config.SCREEN["HEIGHT"])
   canvas.pack()
 
