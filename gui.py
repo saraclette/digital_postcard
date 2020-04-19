@@ -23,7 +23,6 @@ class Gui(tk.Canvas):
     right_button_window = self.create_window(config.SCREEN["WIDTH"], config.SCREEN["HEIGHT"]/2,
     anchor='e', window=right_button)
 
-#TODO deal with placement
   def create_print_button(self, root, command):
     print_button = tk.Button(root, text = "Print", command = command, width = 10)
     print_button_window = self.create_window(config.SCREEN["WIDTH"]/2, config.SCREEN["HEIGHT"]-10,
