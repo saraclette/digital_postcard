@@ -56,6 +56,7 @@ if __name__ == "__main__":
 
   root = tk.Tk()
   root.attributes('-fullscreen',True)
+  root.geometry('480x800')
 
   canvas = Gui(root, width=config.SCREEN["WIDTH"], height=config.SCREEN["HEIGHT"])
   canvas.pack()

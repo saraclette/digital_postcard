@@ -1,8 +1,8 @@
 USE_EFFECT = False
 
-SCREEN = {"WIDTH" : 1366/4, "HEIGHT" : 786/2}
+SCREEN = {"WIDTH" : 800, "HEIGHT" : 480}
 
-PATH = "/home/sarah/projets/digital_postcard/data/*"
+PATH = "/home/pi/digital_postcard/data/*"
 
 # Paper width is 384 pixel
 MAX_PAPER_PIXEL_LENGTH = 384
