@@ -1,7 +1,7 @@
 import constant
 import config
 import logging
-import Lock
+from threading import Lock
 
 if config.USE_EFFECT:
   import RPI.GPIO as GPIO

@@ -4,7 +4,7 @@ import glob
 import os
 import gui
 import logging
-import Lock
+from threading import Lock
 
 file_has_changed = False
 file_has_changed_lock = Lock()
