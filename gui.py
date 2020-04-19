@@ -38,7 +38,7 @@ class Gui(tk.Canvas):
       with open(text_path, 'r') as myfile:
         text_persistent = myfile.read()
 
-      Gui.text_element = tk.Text(self, width=60, height=20)
+      Gui.text_element = tk.Text(self, width=60, height=0)
       Gui.text_element.tag_configure('tag-center', justify='center', wrap='word')
       Gui.text_element.insert(tk.INSERT, text_persistent, 'tag-center')
       Gui.text_element["state"] = tk.DISABLED
