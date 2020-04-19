@@ -14,22 +14,22 @@ class Gui(tk.Canvas):
   new_item = None
 
   def create_left_button(self, root, command):
-    left_button = tk.Button(root, text = "<", command = command, width = 1)
+    left_button = tk.Button(root, text = "<", command = command, width = 1, relief="flat")
     left_button_window = self.create_window(0, config.SCREEN["HEIGHT"]/2, anchor='w',
     window=left_button)
 
   def create_right_button(self, root, command):
-    right_button = tk.Button(root, text = ">", command = command, width = 1)
+    right_button = tk.Button(root, text = ">", command = command, width = 1, relief="flat")
     right_button_window = self.create_window(config.SCREEN["WIDTH"], config.SCREEN["HEIGHT"]/2,
     anchor='e', window=right_button)
 
   def create_print_button(self, root, command):
-    print_button = tk.Button(root, text = "Print", command = command, width = 10)
+    print_button = tk.Button(root, text = "Print", command = command, width = 10, relief="flat")
     print_button_window = self.create_window(config.SCREEN["WIDTH"]/2, config.SCREEN["HEIGHT"]-10,
     anchor='s', window=print_button)
 
   def create_new_item_button(self, root, command):
-    Gui.new_item = tk.Button(root, text = "Display new message", command = command, width = 5)
+    Gui.new_item = tk.Button(root, text = "Display new message", command = command, width = 5, relief="flat")
     new_item_button_window = self.create_window(config.SCREEN["WIDTH"]/2,
     config.SCREEN["HEIGHT"]/2, anchor='center', window=Gui.new_item)
 
@@ -38,7 +38,7 @@ class Gui(tk.Canvas):
       with open(text_path, 'r') as myfile:
         text_persistent = myfile.read()
 
-      Gui.text_element = tk.Text(self, width=60, height=0)
+      Gui.text_element = tk.Text(self, width=60, height=0, relief="flat")
       Gui.text_element.tag_configure('tag-center', justify='center', wrap='word')
       Gui.text_element.insert(tk.INSERT, text_persistent, 'tag-center')
       Gui.text_element["state"] = tk.DISABLED
